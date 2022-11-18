@@ -6,7 +6,7 @@ import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
-  className?: string;
+    className?: string;
 }
 
 export const Sidebar = ({ className }: SidebarProps) => {
@@ -18,7 +18,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
 
     return (
         <div
-            className={classNames(cls.sidebar, { [cls.collapsed]: collapsed }, [className])}
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
         >
             <button type="button" onClick={onToggle}>toggle</button>
             <div className={cls.switchers}>
