@@ -1,5 +1,4 @@
-import React, { Suspense } from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { Suspense, useEffect } from 'react';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 
@@ -10,6 +9,10 @@ import './styles/index.scss';
 
 const App = () => {
     const { theme } = useTheme();
+
+    useEffect(() => {
+        // throw new Error();
+    }, []);
 
     return (
         <div className={classNames('app', { hovered: true, selected: false }, [theme, 'cls2'])}>
